@@ -8,17 +8,16 @@
 						http://www.springframework.org/schema/context
 		 				http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 	
-	<context:component-scan base-package="polymorphism"></context:component-scan>
-	<bean class="polymorphism.SonySpeaker" />
+	<context:component-scan base-package="com.springbook.biz"></context:component-scan>
 	<!-- <bean id="tv" class="polymorphism.SamsungTV" p:speaker-ref="apple" p:price="23000000" />
 
 	<bean id='sony' class="polymorphism.SonySpeaker" />
 	<bean id='apple' class="polymorphism.AppleSpeaker" />
  -->
- <bean id="dataSource" class="org.apach.commons.dbcp.BasicDataSource" desrtoy-method="close">
+ <!-- <bean id="dataSource" class="org.apach.commons.dbcp.BasicDataSource" desrtoy-method="close">
  <property name="driverClassName" value="org.h2.Driver"/>
  <property name="url" value="jdbc:h2:tcp://localhost/~/test"/>
  <property name="username" value="sa"/>
- </bean>
+ </bean> -->
 
 </beans>
